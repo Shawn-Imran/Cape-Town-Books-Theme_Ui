@@ -1,0 +1,85 @@
+
+.menu_bar {
+  height: 60px;
+  background-color: #6dac23;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 25% 62% 13%;
+  align-items: center;
+
+  .contents {
+    .drop_down {
+      height: 60px;
+      color: rgb(255, 255, 255);
+      background: #88c53f;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.7px;
+      font-family: "Poppins", sans-serif;
+
+      display: flex;
+      align-items: center;
+      margin-right: 40px;
+    }
+  }
+
+  .search {
+    .search-form {
+      display: flex;
+      align-items: center;
+
+      input {
+        height: 40px;
+        width: 100%;
+        border: none;
+        border-radius: 20px 0 0 20px;
+        font-family: "Poppins", sans-serif;
+        padding-left: 30px;
+      }
+
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 42px;
+        width: 80px;
+        background-color: #2e2e2e;
+        color: white;
+        border: none;
+        border-radius: 0 20px 20px 0;
+      }
+    }
+  }
+
+  .cart {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    div {
+      height: 40px;
+      width: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      color: black;
+      font-family: "Poppins", sans-serif;
+
+      border: none;
+      border-radius: 20px;
+      margin-right: 40px;
+    }
+  }
+}
+
+
+@media (max-width: 960px) {
+
+  .menu_bar{
+    display: none !important;
+  }
+}

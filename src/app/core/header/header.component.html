@@ -1,0 +1,115 @@
+<div class="header">
+  <div class="menu_bar">
+    <button (click)="slideMenuActive()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div class="header_logo">
+    <img class="logo img-responsive" src="../../../assets/demo-store-logo.jpg" alt="Demo Store">
+  </div>
+  <!-- Block links module -->
+  <div class="nav_menu">
+    <div>PRICES DROP</div>
+    <div>NEW PRODUCTS</div>
+    <div>BEST SALES</div>
+    <div>CONTACT</div>
+    <div>USSITEMAP</div>
+  </div>
+  <!-- /Block links module -->
+  <div class="content">
+    <div class="first-content">
+      <div class="menu_icon">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>PRICES DROP</button>
+          <button mat-menu-item disabled>NEW PRODUCTS</button>
+          <button mat-menu-item><p>BEST SALES</button>
+          <button mat-menu-item>CONTACT</button>
+          <button mat-menu-item>USSITEMAP</button>
+        </mat-menu>
+      </div>
+      <div class="menu_icon">
+        <button mat-icon-button [matMenuTriggerFor]="searchmenu" aria-label="Example icon-button with a menu">
+          <mat-icon>search</mat-icon>
+        </button>
+        <mat-menu #searchmenu="matMenu" class="searchMenu">
+          <form class="search-form">
+            <input #searchInput id="searchInput" class="tw" type="text" placeholder="      Search Entire Store"
+              name="searchTerm" autocomplete="off" ngModel required>
+            <div class="icon">
+              <mat-icon>search</mat-icon>
+            </div>
+
+          </form>
+        </mat-menu>
+      </div>
+
+      <div class="menu_icon">
+        <mat-icon>person</mat-icon>
+      </div>
+      <div class="menu_icon">
+        <div class="cart">
+          <div>
+            <mat-icon>shopping_cart</mat-icon>(0)
+          </div>
+        </div>
+      </div>
+      <div class="call">
+        <div class="icon">
+          <mat-icon>call</mat-icon>
+        </div>
+        <div>
+          <div class="text-contact">FREE CALL US</div>
+          <div class="contact-no">(+91) 800 000 0000</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<div
+  class="overlay"
+  *ngIf="slideMenu == true"
+  (click)="slideMenuInactive()"
+></div>
+<div class="slide-menu" [class]="slideMenu ? 'active-slide-menu' : 's'">
+  <!--slide-menu-top-->
+  <div class="slide-menu-top">
+    <div>
+      <h3>CAREMEBD</h3>
+    </div>
+    <!---cross-->
+    <div class="cross">
+      <button (click)="slideMenuInactive()">X</button>
+    </div>
+  </div>
+  <!--slide-menu-toggle-->
+
+  <!---responsive-home-menu-area-->
+  <div class="responsive-home-menu-area">
+    <ul>
+      <li><a (click)="slideMenuInactive()" routerLink="/">Vegitables</a></li>
+      <li><a (click)="slideMenuInactive()" routerLink="/">Cheese </a></li>
+
+      <li><a (click)="slideMenuInactive()" routerLink="/">Fruits</a></li>
+      <li><a (click)="slideMenuInactive()" routerLink="/">Spicy </a></li>
+      <li><a (click)="slideMenuInactive()" routerLink="/">Leafy Green</a></li>
+      <li><a (click)="slideMenuInactive()" routerLink="/">Cruciferous </a></li>
+      <li><a (click)="slideMenuInactive()" routerLink="/">Allium </a></li>
+      <li><a (click)="slideMenuInactive()" routerLink="/">Melons </a></li>
+      <li><a (click)="slideMenuInactive()" routerLink="/">Legumes </a></li>
+      <li><a (click)="slideMenuInactive()" routerLink="/">Broccoli </a></li>
+      <li><a (click)="slideMenuInactive()" routerLink="/">Cherry </a></li>
+      <li><a (click)="slideMenuInactive()" routerLink="/">Guava </a></li>
+
+    </ul>
+  </div>
+  <!---resposnive-categorie-menu-->
+
+</div>

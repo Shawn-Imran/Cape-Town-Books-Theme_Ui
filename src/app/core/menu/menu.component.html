@@ -1,0 +1,37 @@
+<div class="menu_bar">
+  <div class="contents">
+    <div class="drop_down">
+      <button mat-button [matMenuTriggerFor]="menu">SHOP BY CATEGORY <mat-icon>expand_more</mat-icon></button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Vegitables</button>
+        <button mat-menu-item>Cheese</button>
+        <button mat-menu-item>Fruits</button>
+        <button mat-menu-item>Spicy</button>
+        <button mat-menu-item>Leafy Green</button>
+        <button mat-menu-item>Cruciferous</button>
+        <button mat-menu-item>Allium</button>
+        <button mat-menu-item>Melons</button>
+        <button mat-menu-item>Legumes</button>
+        <button mat-menu-item>Broccoli</button>
+        <button mat-menu-item>Cherry</button>
+        <button mat-menu-item>Guava</button>
+      </mat-menu>
+    </div>
+  </div>
+
+  <div class="search">
+    <form class="search-form">
+      <input #searchInput id="searchInput" class="tw" type="text" placeholder="      Search Entire Store"
+        name="searchTerm" autocomplete="off" ngModel required>
+      <div class="icon">
+        <mat-icon>search</mat-icon>
+      </div>
+    </form>
+  </div>
+
+  <div class="cart">
+    <div>
+      <mat-icon>shopping_cart</mat-icon>(0)
+    </div>
+  </div>
+</div>

@@ -1,0 +1,433 @@
+<div class="banar">
+  <div class="blank">
+
+  </div>
+
+  <div>
+    <div class="main_banar">
+      <div class="carosel">
+        <swiper [navigation]="true" [pagination]="true" class="mySwiper">
+          <ng-template swiperSlide>
+            <div><img src="../../../assets/banar_carousel/sample-1.jpg"></div>
+            <div class="banar_tag">
+              <div class="banar_tag1">on sale</div>
+              <div class="banar_tag2">fresh green</div>
+              <div class="banar_tag3">fresh fruit & vegetables</div>
+              <div class="banar_tag4"><button>shop now</button></div>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div><img src="../../../assets/banar_carousel/sample-2.jpg"></div>
+            <div class="banar_tag">
+              <div class="banar_tag1">on sale</div>
+              <div class="banar_tag2">fresh fruit</div>
+              <div class="banar_tag3">the great fruit</div>
+              <div class="banar_tag4"><button>shop now</button></div>
+            </div>
+          </ng-template>
+        </swiper>
+      </div>
+      <div class="tag">
+        <div class="res_tag">
+          <div class="tag_image">
+            <img src="../../../assets/banar_carousel/cms-banner-01.jpg">
+            <div class="text_tag">
+              <h1>BEST QUALITY</h1>
+              <p class="fresh">100% Fresh</p>
+              <p class="shop">SHOP NOW</p>
+            </div>
+          </div>
+        </div>
+        <div class="res_tag">
+          <div class="tag_image">
+            <img src="../../../assets/banar_carousel/cms-banner-02.jpg">
+            <div class="another_tag">
+              <div class="only">only</div>
+              <div class="aug">9aug</div>
+              <span class="use_code">use code</span>
+              <span class="fresh">fresh25</span>
+              <span class="save">to save up to 25%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature_tag_main">
+      <div class="res_feature">
+        <div class="feature_tag">
+          <div class="icon">
+            <mat-icon>local_shipping</mat-icon>
+          </div>
+          <div class="service-details">
+            <div class="title">Free World Delivery</div>
+            <div class="description">Orders Over $100</div>
+          </div>
+        </div>
+      </div>
+      <div class="res_feature">
+        <div class="feature_tag2">
+          <div class="icon">
+            <mat-icon>paid</mat-icon>
+          </div>
+          <div class="service-details">
+            <div class="title">Money Back Guaranty</div>
+            <div class="description">With a 30 Day</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="res_feature">
+        <div class="feature_tag">
+          <div class="icon">
+            <mat-icon>headset_mic</mat-icon>
+          </div>
+          <div class="service-details">
+            <div class="title">Money Back Guaranty</div>
+            <div class="description">With a 30 Day</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="featured_products">
+  <div class="side_option">
+    <div class="options">
+      <div class="icon">
+        <mat-icon>account_balance_wallet</mat-icon>
+      </div>
+      <div class="cms-block">
+        <div class="cms_offer">use wallet</div>
+        <div class="cms_offer1">pay for payment</div>
+      </div>
+    </div>
+
+    <div class="options">
+      <div class="icon">
+        <mat-icon>info</mat-icon>
+      </div>
+      <div class="cms-block">
+        <div class="cms_offer">our details</div>
+        <div class="cms_offer1">our bank account</div>
+      </div>
+    </div>
+
+    <div class="options">
+      <div class="icon">
+        <mat-icon>shopping_bag</mat-icon>
+      </div>
+      <div class="cms-block">
+        <div class="cms_offer">online shopping</div>
+        <div class="cms_offer1">free hemming</div>
+      </div>
+    </div>
+
+    <div class="options">
+      <div class="icon">
+        <mat-icon>local_shipping</mat-icon>
+      </div>
+      <div class="cms-block">
+        <div class="cms_offer">free delivery</div>
+        <div class="cms_offer1">order about 50$</div>
+      </div>
+    </div>
+
+    <div class="options">
+      <div class="icon">
+        <mat-icon>lock</mat-icon>
+      </div>
+      <div class="cms-block">
+        <div class="cms_offer">login checkout</div>
+        <div class="cms_offer1">payment service</div>
+      </div>
+    </div>
+
+    <div class="img">
+      <div class="hover_img"><img src="../../../assets/banar_carousel/left-banner-1.jpg" alt=""></div>
+    </div>
+  </div>
+
+  <div class="products_card">
+    <div class="header">
+      <div class="new_arrivals_button">
+        <h2 class="new_arrivals">New Arrivals</h2>
+      </div>
+
+      <div class="blank">
+
+      </div>
+
+      <div class="new_options">
+
+        <div>
+          feature
+        </div>
+        <div>
+          latest
+        </div>
+        <div>
+          best seller
+        </div>
+      </div>
+    </div>
+
+    <div class="products">
+      <div class="products_carousel">
+        <swiper [slidesPerView]="1" [spaceBetween]="0" [freeMode]="true" [navigation]="false" [breakpoints]="{
+      '300': {
+        slidesPerView: 1
+      },
+      '520': {
+        slidesPerView: 2
+      },
+      '720': {
+        slidesPerView: 3
+      },
+      '1024': {
+        slidesPerView: 4
+      }
+    }" class="mySwiper">
+          <ng-template swiperSlide>
+            <div class="polaroid">
+              <div class="image_div">
+                <div class="card">
+                  <div class="card-side front">
+                    <div><img src="../../../assets/banar_carousel/86-home_default.jpg" alt=""></div>
+                  </div>
+                  <div class="card-side back">
+                    <div><img src="../../../assets/banar_carousel/25-home_default.jpg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              <div class="product_details">
+                <div class="star_content">
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                </div>
+                <div class="container">
+                  <p href="/gorgeous-trendy-salwar-suit">Justo Neque Commodo Nisl</p>
+                </div>
+                <div class="container">
+                  <span class="price">$100.00</span>
+                </div>
+              </div>
+            </div>
+
+          </ng-template>
+
+          <ng-template swiperSlide>
+            <div class="polaroid">
+              <div class="image_div">
+                <div class="card">
+                  <div class="card-side front">
+                    <div><img src="../../../assets/banar_carousel/38-home_default.jpg" alt=""></div>
+                  </div>
+                  <div class="card-side back">
+                    <div><img src="../../../assets/banar_carousel/37-home_default.jpg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              <div class="product_details">
+                <div class="star_content">
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                </div>
+                <div class="container">
+                  <p href="/gorgeous-trendy-salwar-suit">Justo Neque Commodo Nisl</p>
+                </div>
+                <div class="container">
+                  <span class="price">$100.00</span>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+
+          <ng-template swiperSlide>
+            <div class="polaroid">
+              <div class="image_div">
+                <div class="card">
+                  <div class="card-side front">
+                    <div><img src="../../../assets/banar_carousel/50-home_default.jpg" alt=""></div>
+                  </div>
+                  <div class="card-side back">
+                    <div><img src="../../../assets/banar_carousel/147-home_default.jpg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              <div class="product_details">
+                <div class="star_content">
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                </div>
+                <div class="container">
+                  <p href="/gorgeous-trendy-salwar-suit">Justo Neque Commodo Nisl</p>
+                </div>
+                <div class="container">
+                  <span class="price">$100.00</span>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+
+          <ng-template swiperSlide>
+            <div class="polaroid">
+              <div class="image_div">
+                <div class="card">
+                  <div class="card-side front">
+                    <div><img src="../../../assets/banar_carousel/56-home_default.jpg" alt=""></div>
+                  </div>
+                  <div class="card-side back">
+                    <div><img src="../../../assets/banar_carousel/91-home_default.jpg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              <div class="product_details">
+                <div class="star_content">
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                </div>
+                <div class="container">
+                  <p href="/gorgeous-trendy-salwar-suit">Justo Neque Commodo Nisl</p>
+                </div>
+                <div class="container">
+                  <span class="price">$100.00</span>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+
+          <ng-template swiperSlide>
+            <div class="polaroid">
+              <div class="image_div">
+                <div class="card">
+                  <div class="card-side front">
+                    <div><img src="../../../assets/banar_carousel/62-home_default.jpg" alt=""></div>
+                  </div>
+                  <div class="card-side back">
+                    <div><img src="../../../assets/banar_carousel/86-home_default.jpg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              <div class="product_details">
+                <div class="star_content">
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                  <div class="star_on">
+                    <mat-icon>star</mat-icon>
+                  </div>
+                </div>
+                <div class="container">
+                  <p href="/gorgeous-trendy-salwar-suit">Justo Neque Commodo Nisl</p>
+                </div>
+                <div class="container">
+                  <span class="price">$100.00</span>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+
+        </swiper>
+      </div>
+    </div>
+
+    <div class="image_album">
+      <div class="text">
+        <div class="image1">
+          <div class="image">
+            <img src="../../../assets/banar_carousel/sub-banner-04.jpg" alt="">
+          </div>
+        </div>
+        <div class="text-block">
+          <div class="text1">organic fruits</div>
+          <div class="text2">fresh &amp; healthy</div>
+          <div class="text3">40% off</div>
+        </div>
+      </div>
+      <div class="text">
+        <div class="image1">
+          <div class="image">
+            <img src="../../../assets/banar_carousel/sub-banner-05.jpg" alt="">
+          </div>
+        </div>
+        <div class="text-block1">
+          <div class="text1">organic vegetable</div>
+          <div class="text2">natural vegetable</div>
+          <div class="text3">35% off</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="anim_text">
+      <div class="offer">shop your favourite item on <span> shop town</span></div>
+      <div class="offer1">end thursday! extra 30% off on sale</div>
+    </div>
+  </div>
+</div>

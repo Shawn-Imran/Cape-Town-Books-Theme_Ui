@@ -1,0 +1,255 @@
+.header {
+  height: 140px;
+  display: grid;
+  grid-template-columns: 22% 53% 25%;
+  margin-left: 50px;
+  margin-right: 50px;
+  align-items: center;
+  .header_logo {
+    justify-content: start;
+  }
+
+  .nav_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: #2e2e2e;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .content {
+    display: flex;
+    justify-content: end;
+
+    .first-content {
+      display: flex;
+      align-items: center;
+      height: 45px;
+      padding-right: 20px;
+      border-left: 2px solid rgb(238, 238, 238);
+
+      .menu_icon {
+        display: none;
+      }
+
+      .call{
+        display: flex;
+      }
+
+      .icon {
+        align-items: center;
+        margin-left: 50px;
+        margin-right: 40px;
+        mat-icon {
+          color: green;
+          font-size: 45px;
+        }
+      }
+
+      .text-contact {
+        font-family: "Poppins", sans-serif;
+        color: #2e2e2e;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.8px;
+        font-weight: 600;
+      }
+
+      .contact-no {
+        font-family: "Poppins", sans-serif;
+        color: #2e2e2e;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.8px;
+      }
+    }
+  }
+}
+
+
+.search-form {
+  display: flex;
+  align-items: center;
+
+  input {
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 42px;
+    width: 80px;
+    background-color: #2e2e2e;
+    color: white;
+    border: none;
+    border-radius: 0 20px 20px 0;
+  }
+}
+.cart {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  div {
+    height: 40px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    font-family: "Poppins", sans-serif;
+
+    border: none;
+    border-radius: 20px;
+    margin-right: 40px;
+  }
+}
+
+
+
+.active-slide-menu{
+  left: 0px;
+}
+
+.menu_bar{
+  display: none;
+}
+
+
+
+@media (max-width: 1050px) {
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .call{
+    display: none!important;
+  }
+
+  .nav_menu{
+    display: none!important;
+  }
+
+  .menu_icon{
+    display: block!important;
+
+    .search-form{
+      background: none;
+    }
+
+
+  }
+
+
+}
+
+@media (max-width: 1000px) {
+
+  .menu_bar{
+    display: block!important;
+  }
+
+}
+
+
+
+
+//overlay
+
+.overlay{
+  display: none;
+  background-color: rgb(0 0 0 /50%);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 350;
+  width: 100%;
+  height: 100vh;
+}
+.slide-menu{
+  display: none;
+  width: 280px;
+  background-color: #fff;
+  position: fixed;
+  top: 0px;
+  left: -100%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 360;
+  transition: all 0.3s linear;
+}
+.active-slide-menu{
+  left: 0px;
+}
+@media(max-width:960px){
+  .slide-menu{
+      display: block;
+  }
+  .overlay{
+      display: block;
+  }
+}
+.slide-menu::-webkit-scrollbar{
+  width: 0px;
+  background-color: #fff;
+}
+.slide-menu-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  // margin-bottom: 10px;
+}
+.slide-menu-top h3{
+  color: white;
+  font-weight: 500;
+  font-size: 19px;
+  font-style: normal;
+  display: block;
+}
+.cross{
+  display: block;
+}
+.cross button{
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  outline: none;
+  border: none;
+  padding: 3px 5px;
+  box-sizing: border-box;
+  font-style: normal;
+  font-size:19px;
+  display: inline-block;
+}
+
+
+.responsive-home-menu-area ul li a{
+  padding: 8px 15px;
+  box-sizing: border-box;
+  color: #000;
+  text-transform: capitalize;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  transition: all 0.3s linear;
+}
+
+
