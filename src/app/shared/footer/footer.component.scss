@@ -9,20 +9,20 @@
     background-color: #6dac23;
 
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 55% 40%;
     align-items: center;
 
     margin-bottom: 20px;
 
-    .title_part{
+    .title_part {
       display: flex;
       align-items: center;
       margin-left: 10%;
       column-gap: 10px;
 
-      .icon{
+      .icon {
         width: 55px;
-        mat-icon{
+        mat-icon {
           font-size: 55px;
           color: white;
         }
@@ -35,89 +35,69 @@
         font-weight: 700;
         text-transform: uppercase;
         font-family: "Poppins", sans-serif;
-
-
       }
-
     }
 
-    .search_bar{
+    .search_bar {
       display: grid;
       align-items: center;
-      margin-right: 10%;
-
-      background-color: #88C53F;
       height: 100%;
 
-
-      .search_bar_div{
+      .search_bar_div {
         display: grid;
-        grid-template-columns: 70% 30%;
+        grid-template-columns: 65% 35%;
         align-items: center;
-        margin-left: 20px;
-        gap: 30px;
+        justify-items: center;
+        height: 100%;
+        background-color: #88c53f;
 
+        .search_input {
+          width: 85%;
 
-
-        .search_input{
-          width: 100%;
-
-
-          input{
+          input {
             width: 100%;
             height: 40px;
+            padding-left: 10px;
             border: none;
             border-radius: 20px;
-            padding-left: 20px;
           }
         }
 
-        .send_button{
+        .send_button {
           display: grid;
           align-items: center;
           justify-content: center;
 
-          height: 40px;
-          width: 80px;
-          border: none;
-          border-radius: 20px;
-          background-color:black;
+          button {
+            background-color: #2e2e2e;
 
-          button{
+            height: 40px;
+            width: 80px;
             border: none;
-            background-color: black;
+            border-radius: 20px;
             color: white;
           }
-
         }
       }
     }
-
   }
 }
 
-@media (max-width:1000px) {
-  .container1{
-    display: block!important;
+@media (max-width: 850px) {
+  .footer-area .container1{
+      grid-template-columns: 100%;
+      justify-items: center;
+      row-gap: 10px;
 
-    .title_part{
-      margin: none;
-      justify-content: center;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      .search_bar_div{
+        width: 140%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
     }
-
-    .search_bar{
-      justify-content: center;
-      background-color: #6dac23!important;
-      margin-bottom: 20px;
-    }
-    form{
-      margin-bottom: 20px;
-
-    }
-  }
 }
-
-
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
@@ -221,7 +201,7 @@
 //2nd part end
 .container {
   display: grid;
-  grid-template-columns: 28% 24% 24% 24%;
+  grid-template-columns: 31% 23% 23% 23%;
   align-items: center;
 
   margin: 40px;
@@ -274,6 +254,16 @@
     }
   }
 }
+@media (max-width: 830px) {
+  .container{
+    grid-template-columns: 100%;
+    justify-items: center;
+    row-gap: 20px;
+  }
+}
+
+
+
 
 .sub_footer {
   margin-top: 40px;
@@ -321,37 +311,30 @@
           background-color: transparent;
         }
       }
-      .login{
+      .login {
         border-right: none;
       }
     }
   }
 }
 
-
-
-
-.footer_copyright{
+.footer_copyright {
   display: grid;
   grid-template-columns: 50% 50%;
-  align-items:center;
+  align-items: center;
 
   background: #efefef;
   padding-top: 20px;
   padding-bottom: 20px;
 
-
-  .footer_container{
+  .footer_container {
     margin-left: 50px;
     text-align: left;
   }
-  .payment{
+  .payment {
     display: flex;
     align-items: center;
     justify-content: end;
     margin-right: 40px;
   }
 }
-
-
-
