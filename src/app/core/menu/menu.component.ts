@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+
+  isOpen = false;
+  catSlide = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  myFunction() {
+    this.catSlide = true;
+  }
+  catSlideInactive() {
+    this.catSlide = false;
+  }
 }

@@ -1,8 +1,25 @@
 <div class="menu_bar">
   <div class="contents">
-    <div class="drop_down">
+
+    <!-- <div class="dropdown">
+      <button (click)="myFunction()" class="dropbtn">SHOP BY CATEGORY <mat-icon>expand_more</mat-icon></button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#about">Vegitables</a>
+        <a href="#base">Cheese</a>
+        <a href="#blog">Fruits</a>
+        <a href="#contact">Spicy</a>
+        <a href="#custom">Leafy</a>
+        <a href="#support">Cruciferous</a>
+        <a href="#tools">Allium</a>
+        <a href="#blog">Melons</a>
+        <a href="#contact">Legumes</a>
+        <a href="#custom">Broccoli</a>
+        <a href="#support">Cherry</a>
+        <a href="#tools">Guava</a>
+      </div> -->
+    <div class="dropdown">
       <button mat-button [matMenuTriggerFor]="menu">SHOP BY CATEGORY <mat-icon>expand_more</mat-icon></button>
-      <mat-menu #menu="matMenu">
+      <mat-menu #menu="matMenu" >
         <button mat-menu-item>Vegitables</button>
         <button mat-menu-item>Cheese</button>
         <button mat-menu-item>Fruits</button>

@@ -1,3 +1,5 @@
+@import "../../../styles.scss";
+
 .header {
   height: 140px;
   display: grid;
@@ -237,7 +239,6 @@
   font-size:19px;
   display: inline-block;
 }
-
 
 .responsive-home-menu-area ul li a{
   padding: 8px 15px;

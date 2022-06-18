@@ -14,6 +14,7 @@ import { MaterialModule } from 'src/app/material/material.module';
     CommonModule,
     RouterModule,
     MaterialModule,
+    
   ],
   exports: [
     MenuComponent
